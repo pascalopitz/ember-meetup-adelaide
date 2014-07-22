@@ -1,0 +1,13 @@
+html, body {
+  margin: 20px;
+}
+
+.modal {
+
+}
+
+.modal-inner {
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 20px;
+}

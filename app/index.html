@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EmberMeetupAdelaide</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/ember-meetup-adelaide.css">
+  </head>
+  <body>
+    <script>
+      window.EmberMeetupAdelaideENV = {{ENV}};
+      window.EmberENV = window.EmberMeetupAdelaideENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/ember-meetup-adelaide.js"></script>
+    <script>
+      window.EmberMeetupAdelaide = require('ember-meetup-adelaide/app')['default'].create(EmberMeetupAdelaideENV.APP);
+    </script>
+  </body>
+</html>
