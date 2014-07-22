@@ -1,6 +1,6 @@
 export default Ember.Route.extend({
   renderTemplate: function () {
-    this.render('dashboard/settings', {
+    this.render('account/password', {
       outlet : 'modal',
       into: 'application'
     });
@@ -15,7 +15,7 @@ export default Ember.Route.extend({
 
   actions: {
     close: function () {
-      this.transitionTo('dashboard');
+      this.transitionTo('account');
     }
   }
 });

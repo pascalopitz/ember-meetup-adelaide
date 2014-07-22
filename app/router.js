@@ -10,6 +10,10 @@ Router.map(function() {
            this.route('edit');
         });
     });
+
+    this.resource('account', function() {
+       this.route('password');
+    });
 });
 
 export default Router;

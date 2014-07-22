@@ -3,11 +3,21 @@ html, body {
 }
 
 .modal {
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
 
+  background: rgba(0, 0, 0, .4);
 }
 
 .modal-inner {
+  max-width: 50vw;
+  max-height: 50vh;
   margin: 50px auto;
   background: #ffffff;
   padding: 20px;
+
 }
