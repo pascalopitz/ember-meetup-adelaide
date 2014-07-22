@@ -1,13 +1,13 @@
-<div class="modal">
-  <div class="modal-inner">
-    <a {{action 'close'}}>x</a>
-    <nav>
-        <ul>
-            <li>{{#link-to 'dashboard.settings.index'}}View{{/link-to}}</li>
-            <li>{{#link-to 'dashboard.settings.edit'}}Edit{{/link-to}}</li>
-        </ul>
-    </nav>
+<div class="modal-inner">
 
-    {{outlet}}
-  <div>
+<a {{action 'close'}}>x</a>
+<nav>
+    <ul>
+        <li>{{#link-to 'dashboard.settings.index'}}View{{/link-to}}</li>
+        <li>{{#link-to 'dashboard.settings.edit'}}Edit{{/link-to}}</li>
+    </ul>
+</nav>
+
+{{outlet}}
+
 </div>
